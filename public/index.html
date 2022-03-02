@@ -2,32 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" >
+  <meta charset="UTF-8">
   <title>Responsive 1</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <script src="includehtml.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', initApp);
+function initApp() {
+  includeHTML();
+}    
+  </script>
 </head>
 
 <body>
-  <nav>
-    <input type="checkbox" id="res-menu" />
-    <label for="res-menu">
-      <i class="fa fa-bars" id="sign-one"></i>
-      <i class="fa fa-times" id="sign-two"></i>
-    </label>
-    <h1>Component</h1>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="banner-area">
-    <div class="banner-text">
-      <h2>Responsive Navbar</h2>
-    </div>
+  <nav  include-html="navbar.html"></nav>
+  <div class="main">
+    <div class="main-text">Responsive</div>
   </div>
 </body>
 

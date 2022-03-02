@@ -1,0 +1,25 @@
+<style>
+  #navtitle {
+    display:  none;
+    line-height: 1.8;
+    letter-spacing:  2px;
+  }
+</style>
+<input type="checkbox" id="res-menu" />
+<label for="res-menu">
+  <i class="fa fa-bars" id="sign-one"></i>
+  <i class="fa fa-times" id="sign-two"></i>
+</label>
+<h1 id="navtitle">Responsive</h1>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>   
+<script>
+  setTimeout(() => {
+    document.getElementById('navtitle').style.display = 'block';
+  }, 500)
+</script>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,31 +62,28 @@ label #sign-two {
   display: none;
 }
 
-.banner-area {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(2.jpg);
-  -webkit-background-size: cover;
+.main {
+  background: url(2.jpg);
   background-size: cover;
   background-position: center center;
+  width: 100vw;
   height: 100vh;
-}
-
-.banner-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner-text h2 {
+.main-text {
   color: #fff;
-  margin-top: -140px;
-  font-size: 56px;
+  font-size: 3em;
   text-align: center;
 }
 
 @media (max-width: 50em) {
+  body {
+    font-size: 80%;
+  }
+
   label #sign-one {
     display: block;
   }
@@ -108,18 +103,18 @@ label #sign-two {
   nav ul li {
     display: block;
     margin: 0px 0;
-    padding: 15px 0;
-    line-height: 30px;
-    background: rgb(220, 20, 60, 0.75);
+    padding: 10px 0;
+    line-height: 20px;
+    background: maroon;
     border-bottom: 1px dotted #fff;
   }
 
   nav ul li:hover {
-    background: rgb(220, 20, 60, 1);
+    opacity:  0.5;
   }
 
   nav ul li a {
-    font-size: 20px;
+    /* font-size: 20px; */
   }
 
   #res-menu:checked ~ ul {
